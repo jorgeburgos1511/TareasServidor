@@ -1,0 +1,16 @@
+<h1>Galería de imágenes</h1>
+
+{{#if hasImages}}
+  <div class="gallery">
+    {{#each images}}
+      <div class="gallery-item">
+        <img src="/uploads/{{this}}" alt="Imagen subida">
+      </div>
+    {{/each}}
+  </div>
+{{else}}
+  <p>No hay imágenes en la galería.</p>
+  <p><a href="/upload">Subir primera imagen</a></p>
+{{/if}}
+
+<p><a href="/upload">Subir nueva imagen</a></p>
